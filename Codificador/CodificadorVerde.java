@@ -15,11 +15,10 @@ public class CodificadorVerde implements Codificador {
 
     public String codifica(String str){
         StringBuilder encoded = new StringBuilder();
-        String verde="verde";
         int letra=0;
         for (char c : str.toCharArray()) {
-            encoded.append((char) (c + (int)verde.charAt(letra)));
-            if (letra==4) {
+            encoded.append((char) (c + letra));
+            if (letra==5) {
                 letra=0;
             }
             else{
@@ -31,11 +30,10 @@ public class CodificadorVerde implements Codificador {
 
     public String decodifica (String str){
         StringBuilder encoded = new StringBuilder();
-        String verde="verde";
         int letra=0;
         for (char c : str.toCharArray()) {
-            encoded.append((char) (c - (int)verde.charAt(letra)));
-            if (letra==4) {
+            encoded.append((char) (c - letra));
+            if (letra==5) {
                 letra=0;
             }
             else{
