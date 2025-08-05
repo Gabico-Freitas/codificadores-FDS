@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Codificador cod = new CodificadorVerde();
 
         System.out.println("Codificador: "+cod.getNome());

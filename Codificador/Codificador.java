@@ -15,4 +15,5 @@ public interface Codificador {
 
     // Recebe um string codificado e retorna o correspondente decodificado
     public String decodifica(String str);
+
 }
