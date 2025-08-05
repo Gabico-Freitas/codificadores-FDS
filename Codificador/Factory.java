@@ -1,7 +1,7 @@
 public class Factory {
     public static String bestEncoder(int securityLevel){
          if (securityLevel==1) {
-            return "CodificadorSimples \nCodificadorVerde";
+            return "CodificadorSimples\nCodificadorVerde\nCodificador_Pali";
         }
         else if(securityLevel==Integer.MAX_VALUE){
             return "CodificadorBest";
